@@ -14,19 +14,25 @@ export default function AppNav(){
         <Navbar bg="dark" data-bs-theme="dark">
         <Container>
         <Link  href="/" passHref legacyBehavior>
-          <Navbar.Brand href="/">Home</Navbar.Brand>
+          <Navbar.Brand>Home</Navbar.Brand>
         </Link>
           <Nav className="me-auto">
           <NavDropdown title="Ngrams" id="basic-nav-dropdown">
-          <Link  href="ngram/single" passHref legacyBehavior>
-              <NavDropdown.Item href="ngram/single">Single</NavDropdown.Item>
+          <Link  href="/ngram/single" passHref legacyBehavior>
+              <NavDropdown.Item>Single</NavDropdown.Item>
               </Link>
-              <NavDropdown.Item href="ngram/duo">
+              <Link  href="/ngram/duo" passHref legacyBehavior>
+              <NavDropdown.Item>
                 Duo
               </NavDropdown.Item>
-              <NavDropdown.Item href="ngram/multi">Multi</NavDropdown.Item>
+              </Link>
+              <Link  href="/ngram/multi" passHref legacyBehavior>
+              <NavDropdown.Item>Multi</NavDropdown.Item>
+              </Link>
             </NavDropdown>
-            <Nav.Link href="#About">Features</Nav.Link>
+            <Link  href="/about" passHref legacyBehavior>
+            <Nav.Link>Features</Nav.Link>
+            </Link>
             {/* <Nav.Link href="#Co">Pricing</Nav.Link> */}
           </Nav>
         </Container>

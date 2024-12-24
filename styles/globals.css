@@ -8,6 +8,158 @@ body{
   font-family:'MyFont';
 }
 
+/* CSS Colors for Homestuck Characters */
+
+/* Alpha Kids */
+.JE {
+  color: #0715cd; /* RGB: 7, 21, 205 */
+}
+.NS {
+  color: #00d5f2; /* RGB: 0, 213, 242 */
+}
+.RxLa,
+.RL {
+  color: #b536da; /* RGB: 181, 54, 218 */
+}
+.JS {
+  color: #f141ef; /* RGB: 241, 65, 239 */
+}
+.DiSt,
+.DS {
+  color: #e00707; /* RGB: 224, 7, 7 */
+}
+.DaSp {
+  color: #f2a400; /* RGB: 242, 164, 0 */
+}
+.JH {
+  color: #4ac925; /* RGB: 74, 201, 37 */
+}
+.JadeS {
+  color: #1f9400; /* RGB: 31, 148, 0 */
+}
+
+/* Beta Kids */
+.JC {
+  color: #00d5f2; /* RGB: 0, 213, 242 */
+}
+
+.DS {
+  color: #f2a400; /* RGB: 242, 164, 0 */
+}
+
+.ARSp {
+  color: #e00707; /* RGB: 224, 7, 7 */
+}
+
+.RL {
+  color: #ff6ff2; /* RGB: 255, 111, 242 */
+}
+.trickster-bg {
+  background-color: #fbbaff; /* RGB: 251, 186, 255 */
+}
+.Tr {
+  color: #b536da; /* RGB: 181, 54, 218 */
+}
+.JaEn {
+  color: #1f9400; /* RGB: 31, 148, 0 */
+}
+.ES {
+  color: #4ac925; /* RGB: 74, 201, 37 */
+}
+
+/* Trolls */
+.KnVa,
+.KV {
+  color: #626262; /* RGB: 98, 98, 98 */
+}
+.KV-red {
+  color: #ff0000; /* RGB: 255, 0, 0 */
+}
+.AM,.AS,.DM,
+.AB {
+  color: #a10000; /* RGB: 161, 0, 0 */
+}
+.AM-dreambubble {
+  color: #000056; /* RGB: 0, 0, 86 */
+}
+.AM-ministrife {
+  color: #0022cf; /* RGB: 0, 34, 207 */
+}
+.RN,
+.HZ,
+.TN {
+  color: #a15000; /* RGB: 161, 80, 0 */
+}
+.MC,
+.SC {
+  color: #a1a100; /* RGB: 161, 161, 0 */
+}
+.ML,
+.NL {
+  color: #416600; /* RGB: 65, 102, 0 */
+}
+.PM,
+.KM,
+.mothersprite {
+  color: #008141; /* RGB: 0, 129, 65 */
+}
+.LP,
+.TP,
+.dragonsprite {
+  color: #008282; /* RGB: 0, 130, 130 */
+}
+.VS,.ArSe,
+.mindfang {
+  color: #005682; /* RGB: 0, 86, 130 */
+}
+.EZ {
+  color: #000056; /* RGB: 0, 0, 86 */
+}
+.equius-ministrife {
+  color: #0022cf; /* RGB: 0, 34, 207 */
+}
+.KuMa,
+.GM {
+  color: #2b0057; /* RGB: 43, 0, 87 */
+}
+.gamzee-scratch-interlude {
+  color: #4200b0; /* RGB: 66, 0, 176 */
+}
+.gamzee-openbound {
+  color: #6c00da; /* RGB: 108, 0, 218 */
+}
+.EZ {
+  color: #6a006a; /* RGB: 106, 0, 106 */
+}
+.MP,
+.FP {
+  color: #77003c; /* RGB: 119, 0, 60 */
+}
+
+/* Tricksters and Misc */
+.TRJK,.TRJN,.TRRx,
+.trickster {
+  background: linear-gradient(
+    #ffd1d1, #ffe6d1, #fff6d1, #d1ffe3, #d1f9ff, #d1dcff, #f0d1ff
+  );
+}
+.DoSc {
+  color: #ffffff; /* RGB: 255, 255, 255 */
+}
+.uranian-umbra {
+  color: #929292; /* RGB: 146, 146, 146 */
+}
+.undying-umbrage {
+  color: #323232; /* RGB: 50, 50, 50 */
+}
+.Ce,
+.Cb {
+  color: #2ed73a; /* RGB: 46, 215, 58 */
+}
+.imperious-condescension {
+  color: #77003c; /* RGB: 119, 0, 60 */
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

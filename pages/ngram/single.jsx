@@ -67,7 +67,7 @@ export default function single(){
         
         <Container>
             <br/>
-            <Form.Select aria-label="Default select example" onChange={va => setUserChoice(va.target.value)} >
+            <Form.Select  aria-label="Default select example" onChange={va => setUserChoice(va.target.value)} >
                 {/* <select value={optionsState}> */}
             <option value={null}>Open this select menu</option>
             {characters}

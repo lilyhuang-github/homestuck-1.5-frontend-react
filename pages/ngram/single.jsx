@@ -40,7 +40,11 @@ export default function single(){
         then((data) =>{
             setDialogue(data);
             
-        });
+        }).catch((err) =>{
+            setDialogue("No available dialogue for selected character");
+            console.log(err);
+          })
+         
        
     }
     // useEffect(()=>{

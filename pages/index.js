@@ -16,7 +16,16 @@ const geistMono = Geist_Mono({
 export default function Home() {
   return (
     <>
-    Information about this
+    <br/>
+    <p style={{'font-family': 'Arial, Helvetica, sans-serif;'}}>
+    Hi, welcome. 
+    <br/>
+    This is my little unofficial project surrounding Homestuck. It's intentions are to create a
+    natural language processing for the characters in Homestuck, and to create sort of unofficial "Homestuck 3/1.5" where the 
+    natural language processing could create dialogue between the characters and show off the quirks of the dialogue.
+    <br/>
+    Currently the ngram has been implemented and more are in the works.
+    </p>
     </>
   );
 }

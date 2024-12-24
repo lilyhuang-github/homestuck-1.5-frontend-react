@@ -30,9 +30,9 @@ export default function AppNav(){
               <NavDropdown.Item>Multi</NavDropdown.Item>
               </Link>
             </NavDropdown>
-            <Link  href="/about" passHref legacyBehavior>
+            {/* <Link  href="/about" passHref legacyBehavior>
             <Nav.Link>Features</Nav.Link>
-            </Link>
+            </Link> */}
             {/* <Nav.Link href="#Co">Pricing</Nav.Link> */}
           </Nav>
         </Container>

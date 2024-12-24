@@ -10,6 +10,7 @@ export default function duo(){
     const [userChoice2, setUserChoice2] = useState("Open this select menu");
     const [userChoiceLag1, setUserChoiceLag1] = useState("Open this select menu");
     const [userChoiceLag2, setUserChoiceLag2] = useState("Open this select menu");
+    const [iterations, setIterations] = useState(5);
 
 
     useEffect(()=>{
@@ -36,13 +37,16 @@ export default function duo(){
     const characterFind = (chr1, chr2) =>{
         setUserChoiceLag1(chr1);
         setUserChoiceLag2(chr2);
-        console.log(`https://homestuck-1-5-352988256386.us-central1.run.app/api/get2dialogue/${chr1},${chr2},5`);
-        fetch(`https://homestuck-1-5-352988256386.us-central1.run.app/api/get2dialogue/${chr1},${chr2},5`).
+        console.log(`https://homestuck-1-5-352988256386.us-central1.run.app/api/getxdialogue/${chr1},${chr2},${iterations}`);
+        fetch(`https://homestuck-1-5-352988256386.us-central1.run.app/api/getxdialogue/${chr1},${chr2},${iterations}`).
         then((res) => res.json()).
         then((data) =>{
             setDialogue(data);
             
-        });
+        }).catch((err) =>{
+          setDialogue("No available dialogue between selected characters");
+          console.log(err);
+        })
        
     }
     return (
@@ -66,6 +70,7 @@ export default function duo(){
          
             </Form.Select>
 
+        <br/>
             <Form.Select aria-label="Default select example" onChange={va => setUserChoice2(va.target.value)} >
                 {/* <select value={optionsState}> */}
             <option value={null}>Open this select menu</option>
@@ -82,11 +87,17 @@ export default function duo(){
         ))}
          
             </Form.Select>
+            <br/>
             
             <Button type="button" onClick={() =>characterFind(userChoice1, userChoice2)}variant="dark" disabled={userChoice1 === "Open this select menu" || userChoice2 === "Open this select menu"}>Get Dialogue</Button>
+          <br/><br/>
+            <Form.Control type="number" min="1" placeholder="5"onChange={e => setIterations(e.target.value)} />
+  
             <br/>
             <br/>
-            {dialogue}    
+            <p style={{whiteSpace: "pre-line"}}>
+            {dialogue }    
+            </p>
             </Container></>
     )
 }

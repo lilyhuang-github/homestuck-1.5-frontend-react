@@ -121,7 +121,6 @@ export default function multi() {
       <br />
       <p style={{ whiteSpace: "pre-line" }}>{dialogue}</p>
 
-      {iterations}
     </Container>
   );
 }

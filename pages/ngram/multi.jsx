@@ -50,7 +50,7 @@ export default function multi() {
     const selectedKeys = selectedCharacters.join(",");
     console.log(`Fetching dialogue for: ${selectedKeys}`);
     fetch(
-      `https://homestuck-1-5-352988256386.us-central1.run.app/api/getxdialogue/${selectedKeys},${iterations}`
+      `https://homestuck-ngram-backend-latest.onrender.com/api/getxdialogue/${selectedKeys},${iterations}`
     )
       .then((res) => res.json())
       .then((data) => {

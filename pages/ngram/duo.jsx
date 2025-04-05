@@ -15,7 +15,7 @@ export default function duo(){
 
     useEffect(()=>{
         // console.log("WASD");
-        fetch('https://homestuck-1-5-352988256386.us-central1.run.app/api/available').
+        fetch('https://homestuck-ngram-backend-latest.onrender.com/api/available').
         then((res) => res.json()).
         then((data) =>{
             // console.log(data);
@@ -37,8 +37,8 @@ export default function duo(){
     const characterFind = (chr1, chr2) =>{
         setUserChoiceLag1(chr1);
         setUserChoiceLag2(chr2);
-        console.log(`https://homestuck-1-5-352988256386.us-central1.run.app/api/getxdialogue/${chr1},${chr2},${iterations}`);
-        fetch(`https://homestuck-1-5-352988256386.us-central1.run.app/api/getxdialogue/${chr1},${chr2},${iterations}`).
+        // console.log(`https://homestuck-1-5-352988256386.us-central1.run.app/api/getxdialogue/${chr1},${chr2},${iterations}`);
+        fetch(`https://homestuck-ngram-backend-latest.onrender.com/api/getxdialogue/${chr1},${chr2},${iterations}`).
         then((res) => res.json()).
         then((data) =>{
             setDialogue(data);

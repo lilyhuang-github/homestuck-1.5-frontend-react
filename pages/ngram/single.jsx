@@ -13,7 +13,7 @@ export default function single(){
     
     useEffect(()=>{
         // console.log("WASD");
-        fetch('https://homestuck-1-5-352988256386.us-central1.run.app/api/available').
+        fetch('https://homestuck-ngram-backend-latest.onrender.com/api/available').
         then((res) => res.json()).
         then((data) =>{
             // console.log(data);
@@ -34,8 +34,8 @@ export default function single(){
     // }
     const characterFind = (chr) =>{
         setUserChoiceLag(chr);
-        console.log(`https://homestuck-1-5-352988256386.us-central1.run.app/api/get1dialogue/${chr}`);
-        fetch(`https://homestuck-1-5-352988256386.us-central1.run.app/api/get1dialogue/${chr}`).
+        // console.log(`https://homestuck-1-5-352988256386.us-central1.run.app/api/get1dialogue/${chr}`);
+        fetch(`https://homestuck-ngram-backend-latest.onrender.com/api/get1dialogue/${chr}`).
         then((res) => res.json()).
         then((data) =>{
             setDialogue(data);

@@ -3,9 +3,18 @@
   src: local('MyFont'), url('/fonts/fontstuck.otf') format('truetype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
+      font-display: swap;
 }
 body{
-  font-family:'MyFont';
+  font-family:'MyFont', system-ui, sans-serif;
+}
+.page {
+  background: 
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(var(--gray-rgb), 0.04),
+      transparent 70%
+    );
 }
 
 /* CSS Colors for Homestuck Characters */

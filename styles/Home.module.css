@@ -15,6 +15,19 @@
   gap: 64px;
   font-family: var(--font-geist-sans);
 }
+.page {
+  background: 
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(var(--gray-rgb), 0.04),
+      transparent 70%
+    );
+}
+.page {
+  padding: 64px clamp(24px, 5vw, 80px);
+  gap: 48px;
+}
+
 
 @media (prefers-color-scheme: dark) {
   .page {
